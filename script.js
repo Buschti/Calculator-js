@@ -71,6 +71,7 @@ class Calculator {
                 solution = (100 * previous) / current;
                 break
             case "x^n":
+                if (this.currentOperand === "") return;
                 solution = Math.pow(previous, current);
                 break
             default:
