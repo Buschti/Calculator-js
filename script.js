@@ -58,19 +58,19 @@ class Calculator {
                 if (this.currentOperand === "") return;
                 solution = previous / current;
                 break
-            case "x^1/2":
+            case "^1/2":
                 solution = Math.sqrt(previous);
                 break
-            case "x^2":
+            case "^2":
                 solution = Math.pow(previous, 2);
                 break
-            case "x^-1":
+            case "^-1":
                 solution = 1 / previous;
                 break
             case "%":
                 solution = (100 * previous) / current;
                 break
-            case "x^n":
+            case "^":
                 solution = Math.pow(previous, current);
                 break
             default:
